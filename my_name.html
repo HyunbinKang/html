@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <!--모바일 해상도 맞추기-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--잘 사용하지 않음-->
+    <meta http=equiv="X-UA-Compatible" content="ie=edge">
+    <title>고양이</title>
+    <style>
+      table {
+        width:70%;  /* 표의 너비 */
+        border:1px solid #222; /* 1픽셀짜리 표 테두리 */
+        border-collapse: collapse; /* 중복되는 표와 셀의 테두리를 한 줄로 표시 */
+      }
+      thead {
+        background:#eee;  /* 제목 행의 배경 색 */
+      }
+      th, td {
+        border:1px solid #ccc; /* 1픽셀짜리 셀 테두리 */
+        padding:5px;  /* 셀 테두리와 셀 내용 사이의 여백(패딩) */
+        font-size:0.8em;  /* 셀의 글자 크기 */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>고양이 천재</h1>
+    <h4>고양이를 좋아하는 사람</h4>
+    <hr>
+    <!--p태그 쓰면 위아래 공백이 생김-->
+    <p><mark>고양이</mark>에 대해서 알아봅시당~!~!<br>
+    아이 즐거워><</p>
+    <img src="persian.jpg" width="200px" height="180px">
+    <img src="abinisian.jpg" width="200px" height="180px">
+    <img src="russian.jpg" width="200px" height="180px">
+    <br>
+    <hr>
+    <!--
+    <ol type="a">
+      <li>러시안 블루</li>
+      <li>페르시안</li>
+    </ol>
+    <dl>
+      <dt>고양이 특징</dt>
+      <dd>귀엽다</dd>
+    </dl>
+    <hr>
+    -->
+    <ul>
+      <li>고양이 종류
+        <ol id="cat" type="a">
+          <li><a href="https://namu.wiki/w/아비시니안%20고양이" target="_blank">아비시니안</a></li>
+          <li><a href="https://namu.wiki/w/페르시안" target="_blank">페르시안</a></li>
+          <li><a href="https://namu.wiki/w/러시안블루" target="_blank">러시안 블루</a></li>
+        </ol>
+      </li>
+      <br>
+      <li>고양이 특징</li>
+        <ul>
+          <li>귀엽다</li>
+          <li>귀엽다</li>
+          <li>귀엽다</li>
+        </ul>
+       </li>
+     </ul>
+     <hr>
+     <p>고양이 표</p>
+     <table>
+       <colgroup>
+         <col style="background:#eee;">
+         <col>
+       </colgroup>
+       <thread>
+         <tr>
+           <th>종류</th>
+           <th>아비니시안</th>
+           <th>페르시안</th>
+           <th>러시안블루</th>
+         </tr>
+       </thread>
+       <tbody>
+         <tr>
+           <td>특징</td>
+           <td>지능 1위</td>
+           <td>온순</td>
+           <td>집고양이</td>
+         </tr>
+       </tbody>
+     </table>
+     <p><em>~~~~~~~~~고양이 사랑~~~~~~~~~~해~~~~~~</em></p>
+     <form action='search.php' method='post'>
+       <fieldset>
+         <label>고양이가 궁금한가?<input type='text' title='검색'></label>
+         <input type='submit' value='검색'>
+       </fieldset>
+     </form>
+     <hr>
+     <!--
+     <form>
+          <p>같이 살고 싶은 고양이는??????</p>
+          <ul>
+          <li><label><input type="radio" name="cat" value="abinisian">아비니시안</label></li>
+          <li><label><input type="radio" name="cat" value="presian">페르시안</label></li>
+          <li><label><input type="radio" name="cat" value="russian blue">러시안블루</label></li>
+          </ul>
+      </form>
+      -->
+     <fieldset>
+          <legend>양이양이고양이</legend>
+          <p>같이 살고 싶은 고양이는?????</p>
+          <label><input type="radio" name="cat" value="abinisian">아비니시안</label>
+          <label><input type="radio" name="cat" value="presian">페르시안</label>
+          <label><input type="radio" name="cat" value="russian blue">러시안블루</label>
+      </fieldset>
+  </body> 
+</html>
