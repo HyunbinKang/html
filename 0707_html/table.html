@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>테이블</title>
+        <style>
+            table{
+                width:70%;
+                /*70%로 하면 화면이 계속 70%로 유지
+                width:400px로 하면 화면 변하지 x*/
+                border: 1px solid #222;
+                border-collapse: collapse;
+            }
+            thread{
+                background-color: #eee;
+            }
+            th, td{
+                border: 1px solid #ccc;
+                padding: 5px;
+                font-size: 0.8em;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>col | colgroup </h3>
+        <table border="1">
+            <colgroup>
+                <col style="background-color: #ff0095;"></col>
+                <col span='2' style="background-color: #aaaaaa;"></col>
+            </colgroup>
+            <tr>
+                <th>NO</th>
+                <th>Name</th>
+                <th>Adress</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>홍길동</td>
+                <td>제주</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>향단쓰</td>
+                <td>서울</td>
+            </tr>
+        </table>
+    </body>
+</html>>
