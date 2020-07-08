@@ -1,0 +1,56 @@
+<!--웹페이지의 시작-->
+<!----------------------------------------------------|
+   |  header                                          |
+   |--------------------------------------------------|
+   |---------------- 주메뉴 메인----------------------|
+<--|      |                               |           |<--
+   |   부 |      메인 컨텐츠              |    ad     |
+   |      |                               |           |
+   --------------------------------------------------->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" type="text/css", href="./css/index.css">
+    
+</head>
+<body>
+    <!--전체 틀이 main이다-->
+    <div id="main">
+        <header id="header">HEADER
+        </header>
+        <!--주메뉴가 들어가는 공간-->
+        <nav id="menu_main">
+            <ul>
+                <!--#은 현재문서를 나타냄-->
+                <li><a href="index_html5.html" target="sub">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">JAVA</a></li>
+            </ul>
+        </nav>
+       <!--가운데 영역-->
+        <div id="center">
+            <!--여기에 iframe만들 예정 iframe 이름이 sub-->
+          <nav id="menu_sub" class="center_item">SUBMENU
+              <!--target=sub랑 name=sub랑 연동-->
+              <iframe width="200px" height="300px" border="0" name="sub"></iframe>
+          </nav>
+           <section id="contents" class="center_item">SECTION
+               <iframe width="600px" height="500px" border="0" name="contents"></iframe>
+           </section>
+           <aside id="ad" class="center_item">
+               <h4>[광고 환영]</h4>
+               <img src="http://placehold.it/200x150"/>
+               <img src="persian.jpg" height="150" width="200">
+        </div>
+        <!--마지막-->
+        <footer id="footer">
+            <h3>C와 자바를 활용한 IoT 응용 SW 개발(주)</h3>
+        </footer>
+    </div>
+</body>
+</html>
