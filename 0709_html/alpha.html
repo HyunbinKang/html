@@ -1,0 +1,39 @@
+<!--256p-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #alpha{
+            position: relative;
+        }
+        #alpha>div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid skyblue;
+        }
+        #alpha .box1{
+            background-color: rosybrown;
+        }
+        #alpha .box2{
+            /*절대위치 기준으로 설정
+            부모의 좌측 상단이 00를 기준으로 해서 이동*/
+            position: absolute; 
+            left : 100px;
+            top:100px;
+            background-color: rgba(255,255,0,0.9);
+        }
+    </style>
+</head>
+<body>
+    <br/> <br/> <br/> <br/> <br/>
+    <div id="alpha">
+        <div class="box1"></div>
+        <div class="box2"></div>        
+    </div>
+</body>
+</html>
