@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #gradiant>div{
+            width: 150px;
+            height: 200px;
+            box-shadow: 2px 2px 5px cadetblue;
+            display: inline-block;
+            margin: 10px 10px;
+            border-radius: 40px; /*둥그런 모서리*/
+    
+        }
+        #gradiant .gradi1{
+            background-color: chartreuse;
+            background:radial-gradient(white, yellow, red);
+        }
+        #gradiant .gradi2{
+            background-color: blue;
+            background: radial-gradient(circle, white, yellow, red);
+        }
+        #gradiant .gradi3{
+            background-color: blueviolet;
+            background: radial-gradient(50% 50%,white , yellow,red  );
+        }
+        #gradiant .grad4{
+            background-color: peachpuff;
+            background: radial-gradient(30% 40%, circle closest-side, white, yellow, red);
+        }
+        #gradiant .gradi5{
+            background-color: pink;
+            background: repeating-radial-gradient(circle, white, red 30% );
+        }
+
+    </style>
+</head>
+<body>
+    <div id="gradiant">
+        <div class="gradi1"></div>
+        <div class="gradi2"></div>
+        <div class="gradi3"></div>
+        <div class="gradi4"></div>
+        <div class="gradi5"></div>
+    </div>   
+</body>
+</html>
