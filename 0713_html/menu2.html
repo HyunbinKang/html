@@ -1,0 +1,114 @@
+<!--
+    관리1  | 관리2   |관리3
+--------------------------------
+           |         |
+           |         |
+           |         |
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu2</title>
+    <style>
+        #menu{
+            width: 600px;
+            margin:0 auto;
+        }
+        #menu .bar>ul, #menu .bar>ul ul{
+            list-style: none;
+            padding : 5px;
+            background:#333;
+            color: darkorange;
+            margin-bottom: 0px;
+            /*ul태그 밑에 여백 0으로*/
+        }
+        #menu .bar>ul>li{
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: top;
+        }
+        #menu .content{
+            width: 600px;
+            /*컨텐츠 내용과 상관없이 최소 높이*/
+            min-height: 50px;
+            padding:10px;
+            border: 1px soild white;
+            display: block;
+            box-shadow: 3px 3px 5px #999;
+            margin-top: 4px;
+        }
+        #menu .m1, #menu .m2, #menu .m3{
+            width: 100%;
+            /*height: 30px;*/
+            display: none;
+            color: #ffff88;
+            position: relative;
+        }
+
+        #menu .m1>ul, #menu .m2>ul, #menu .m3>ul{
+            /*display: none;*/
+            position:absolute;
+            background: rgba(100, 100, 100, 0.8);
+            display: inline-block;
+            width: 120px;
+        }
+        #menu .bar1:hover~ .m1{
+            display: block;
+        }
+        #menu .bar2:hover~ .m2{
+            display: block;
+        }
+        #menu .bar3:hover~ .m3{
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="menu">
+        <div class="bar">
+        <ul>
+            <li>
+            <div class="bar1">회원관리</div>
+            <div class="m1">
+                <ul>
+                    <li>입력</li>
+                    <li>수정</li>
+                    <li>조회</li>
+                </ul>
+            </div>
+            </li>
+                
+
+            <li>
+            <div class="bar2">자재관리</div>
+            <div class="m2">
+                <ul>
+                    <li>코드</li>
+                    <li>코드입력</li>
+                    <li>코드수정</li>
+                    <li>코드조회</li>
+                </ul>
+            </div>
+            </li>
+
+            <li>
+            <div class="bar3">자금관리</div>
+            <div class="m3">
+                <ul>
+                    <li>월별 매출관리</li>
+                    <li>제품별 매출관리</li>
+                </ul>
+            </div>
+            </li>
+        </ul>
+        </div>
+
+       <div class="content">
+           작업에 필요한 메뉴를 선택하세요.
+       </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        /*전체 박스의 속성(외곽선, 높이, 넓이)
+        박스 각각의 바탕색 
+        */
+        #z_index>div{
+            border: 2px solid chartreuse;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+        #z_index .box1{
+            background-color: chocolate;
+            z-index: 1;
+            position: absolute;
+        }
+        #z_index .box2{
+            background-color: chocolate;
+            z-index: 1;
+            position: absolute;
+        }
+        #z_index .box3{
+            background-color: chocolate;
+            z-index: 1;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="z_index">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+</body>
+</html>
