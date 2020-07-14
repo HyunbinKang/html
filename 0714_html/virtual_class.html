@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 | 가상 요소</title>
+    <style>
+        /*anchor태그에 밑줄 없애기*/
+        a{
+            text-decoration: none;
+        }
+        #virtual a:link{
+            font-style: 2em;
+        }
+        #virtual a:visited{
+            color: chartreuse;
+        }
+        /*누르고 있으면! 바뀜*/
+        #virtual a:active{
+            font-weight: bold;
+            color:cornflowerblue;
+        }
+        /*virtual 안에 anchor안에 input*/
+        #virtual > .focus >input:focus{
+            background-color: cornflowerblue;
+
+        }
+        #virtual >.focus > input:disabled{
+            background-color: cyan;
+        }
+        #virtual >.list>ol>li:first-child{
+            border-top:4px solid blue;
+        }
+        #virtual >.list>ol>li:nth-child(5n){
+            border-bottom: 1px solid crimson;
+        }
+        #virtual >.list>ol>li:last-child{
+            border-bottom: 4px solid blue;
+        }
+        #virtual >.after >ul>li.hot::after{
+            content : "NEW !!";            
+            background-color: red;
+            color:yellow;
+            border-radius: 5px;
+            padding:2px 4px;
+            margin-left: 10px;
+            margin-top: 2px;
+            height:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="virtual">
+        <h2>동작에 반응하는 가상 클래스</h2>
+
+        <h3>anchor</h3>
+        <div class="anchor">
+            <a href="http://www.naver.com">네이버</a><br/>
+            <a href="http://www.nate.com">네이트</a>
+        </div>
+
+        <h3>focus</h3>
+        <div class="focus">
+            <!--disablded 표시는 되지만 입력되지 않는다-->
+            <input type="text" size="10" disabled>
+            <!--readonly는 커서는 가도 입력되지 않는다-->
+            <input type="text" size="10" readonly>
+            <input type="text" size="10">
+            <input type="text" size="10">
+        </div>
+
+        <h3>nth-child | firts-childe |last child</h3>
+        <div class="list">
+            <ol>
+                <!--list의 ol태그 안에 있는 li중 firstchild-->
+                <li>11111111111111111111111111</li>
+                <li>11111111111111111111111112</li>
+                <li>11111111111111111111111113</li>
+                <li>11111111111111111111111114</li>
+                <li>11111111111111111111111115</li>
+                <li>11111111111111111111111116</li>
+                <li>11111111111111111111111117</li>
+                <li>11111111111111111111111118</li>
+                <li>11111111111111111111111119</li>
+            </ol>
+        </div>
+
+        <h3>::after</h3>
+        <div class="after">
+            <ul>
+                <li class="hot">제품 A</li>
+                <li>제품 B</li>
+                <li>제품 C</li>
+                <li class="hot">제품 D</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
