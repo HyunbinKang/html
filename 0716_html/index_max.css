@@ -1,0 +1,74 @@
+body{
+    max-width: 1200px ;
+    margin: 0 autho;
+    /*background-image: url("bali.jpg");*/
+}
+a{
+    /*밑줄 지우기*/
+    text-decoration: none; 
+}
+
+#header{
+    width: 100%;
+    height: 200px;
+    background-image: url("baliii.jpg");
+    background-repeat: no-repeat;
+    color: white;
+}
+#ad{
+    text-align: center;
+    padding-top: 20px;
+}
+#ad>.coco{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    margin-top: 10p;
+}
+#center{
+    display: flex;
+}
+#menu_main{
+    width: 100%;
+    background-color:  rgba(52,74,183,0.3);
+    padding-top: 3px 0;
+    box-sizing: border-box;
+}
+
+#menu_main>ul{
+    margin: 0 ;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+#menu_main>ul>li{
+    margin-right: 10px;
+    margin-left: 10px;
+    /*width:90px;*/
+    padding: 3px 10px;
+
+}
+#menu_main>ul>li>a{
+    padding:3px 20px;
+    /*color: white;*/
+}
+#menu_main>ul>li>a:hover{
+    background-color: rgba(52,74,183,0.9);
+    color: white;
+    /*background-color:white;
+    color: black;*/
+}
+
+#footer{
+    background-color: rgba(103,122,218,0.1);
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: rgba(103,122,218,0.3);
+    border-width: 5px 0 0 0;
+    
+}
+
