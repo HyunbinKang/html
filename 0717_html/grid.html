@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gird</title>
+    <style>
+        #grid div{
+            border: 1px solid rgb(78, 45, 196);
+            background-color: rgb(165, 221, 223);
+            color: black;
+
+        }
+        #grid{
+            display: grid;
+            /*1fr을 네번 쓴거랑 동일!*/
+            grid-template-columns: repeat(4, 1fr);
+            /*--이거는 주석처리 편법*/
+            --grid-template-columns: 1fr 1fr 2fr 4fr;
+            
+            /*상자 사이에 간격을 두는 3가지 방법
+            colum gap,, row gap,, gap*/
+            gap : 10px 20px;
+            
+        }
+        #grid .item{
+            box-shadow: 1px 1px 3px #000;
+        }
+
+        #grid .item:nth-child(1){
+            grid-column: 1 / span 2;/*첫번째 칸에서부터 colunm 병합*/
+            grid-row: 1 / span 2;
+            
+        }
+        /*4번째 아이를 3번째에서 두칸 늘림*/
+        #grid .item:nth-child(4){
+            grid-column: 3 /span 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis id voluptatibus reprehenderit doloribus eos! Voluptatem laborum nostrum quis natus optio corporis praesentium doloribus asperiores. Consectetur odit earum voluptate accusantium illum molestiae error ipsum veniam quo tempore voluptatum quis ea repellendus possimus assumenda incidunt, odio et repellat. Tenetur, rerum alias? Perspiciatis?
+        </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+        <div class="item">6</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quo ut deserunt rerum doloribus suscipit voluptatem adipisci porro, sequi tenetur!</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+</body>
+</html>
